@@ -85,13 +85,6 @@ struct ChangePasscodeView: View {
             .padding(.top)
             .navigationTitle("Change Passcode")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
-                        dismiss()
-                    }
-                }
-            }
         }
     }
 
