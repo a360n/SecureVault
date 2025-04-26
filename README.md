@@ -42,6 +42,15 @@ Project Architecture
 
 ---
 
+License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute it with proper attribution.
+
+See the [LICENSE](LICENSE) file for more details.
+
+---
+
 Author
 Developed by **Ali Al-Khazali (Blue Software)**
 
