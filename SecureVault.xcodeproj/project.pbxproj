@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		533052F72D8E64F300848246 /* CategoryEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533052F52D8E64F300848246 /* CategoryEntity+CoreDataClass.swift */; };
+		533052F82D8E64F300848246 /* CategoryEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533052F62D8E64F300848246 /* CategoryEntity+CoreDataProperties.swift */; };
+		5330F7222D8C5EC7003999AA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5330F7212D8C5EC7003999AA /* CoreData.framework */; };
+		53BA3F662D8CCB3600287CE4 /* PasswordEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BA3F642D8CCB3600287CE4 /* PasswordEntity+CoreDataClass.swift */; };
+		53BA3F672D8CCB3600287CE4 /* PasswordEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BA3F652D8CCB3600287CE4 /* PasswordEntity+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5330F6D32D8C58E9003999AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,14 +32,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		533052F52D8E64F300848246 /* CategoryEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		533052F62D8E64F300848246 /* CategoryEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		533053372D92042600848246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SecureVault/Info.plist; sourceTree = "<group>"; };
 		5330F6C22D8C58E7003999AA /* SecureVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5330F6D22D8C58E9003999AA /* SecureVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5330F6DC2D8C58E9003999AA /* SecureVaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureVaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5330F7212D8C5EC7003999AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		53BA3F642D8CCB3600287CE4 /* PasswordEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		53BA3F652D8CCB3600287CE4 /* PasswordEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		538453222D92086200FFE573 /* Exceptions for "SecureVault" folder in "SecureVault" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5330F6C12D8C58E7003999AA /* SecureVault */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5330F6C42D8C58E7003999AA /* SecureVault */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				538453222D92086200FFE573 /* Exceptions for "SecureVault" folder in "SecureVault" target */,
+			);
 			path = SecureVault;
 			sourceTree = "<group>";
 		};
@@ -52,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5330F7222D8C5EC7003999AA /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +103,15 @@
 		5330F6B92D8C58E7003999AA = {
 			isa = PBXGroup;
 			children = (
+				533053372D92042600848246 /* Info.plist */,
+				533052F52D8E64F300848246 /* CategoryEntity+CoreDataClass.swift */,
+				533052F62D8E64F300848246 /* CategoryEntity+CoreDataProperties.swift */,
+				53BA3F642D8CCB3600287CE4 /* PasswordEntity+CoreDataClass.swift */,
+				53BA3F652D8CCB3600287CE4 /* PasswordEntity+CoreDataProperties.swift */,
 				5330F6C42D8C58E7003999AA /* SecureVault */,
 				5330F6D52D8C58E9003999AA /* SecureVaultTests */,
 				5330F6DF2D8C58E9003999AA /* SecureVaultUITests */,
+				5330F7202D8C5EC7003999AA /* Frameworks */,
 				5330F6C32D8C58E7003999AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +124,14 @@
 				5330F6DC2D8C58E9003999AA /* SecureVaultUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5330F7202D8C5EC7003999AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5330F7212D8C5EC7003999AA /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BA3F662D8CCB3600287CE4 /* PasswordEntity+CoreDataClass.swift in Sources */,
+				53BA3F672D8CCB3600287CE4 /* PasswordEntity+CoreDataProperties.swift in Sources */,
+				533052F72D8E64F300848246 /* CategoryEntity+CoreDataClass.swift in Sources */,
+				533052F82D8E64F300848246 /* CategoryEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +442,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SecureVault/Preview Content\"";
+				DEVELOPMENT_TEAM = 22PAF2646W;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/SecureVault/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ali.securevault.SecureVault;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ali.testvault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,8 +473,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SecureVault/Preview Content\"";
+				DEVELOPMENT_TEAM = 22PAF2646W;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/SecureVault/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ali.securevault.SecureVault;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ali.testvault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
