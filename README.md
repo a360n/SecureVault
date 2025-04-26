@@ -51,9 +51,6 @@ CryptoKit for encryption operations
 Developed by Ali Al-Khazali (Blue Software)
 
 
-✅ Notes
-The app is built for educational and professional portfolio purposes.
-
 SecureVault does not upload or share any user data externally.
 
 Final Word
